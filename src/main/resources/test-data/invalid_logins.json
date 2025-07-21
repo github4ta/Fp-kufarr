@@ -1,0 +1,12 @@
+[
+  {
+    "email": "invalid@example.com",
+    "password": "wrongpassword",
+    "expectedError": "Неверный email или пароль"
+  },
+  {
+    "email": "",
+    "password": "somepassword",
+    "expectedError": "Введите email"
+  }
+]

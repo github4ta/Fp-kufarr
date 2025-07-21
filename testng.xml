@@ -1,0 +1,25 @@
+<suite name="Kufar Login Tests">
+    <test name="Negative Login Scenarios">
+        <classes>
+            <class name="by.kufar.ui.LoginUITest"/>
+        </classes>
+    </test>
+
+<listeners>
+    <listener class-name="by.kufar.listeners.TestListener"/>
+</listeners>
+
+<test name="UI Tests">
+    <classes>
+        <class name="by.kufar.ui.LoginUITest"/>
+        <class name="by.kufar.ui.SearchUITest"/>
+    </classes>
+</test>
+
+<test name="API Tests">
+    <classes>
+        <class name="by.kufar.api.AuthApiTest"/>
+        <class name="by.kufar.api.SearchApiTest"/>
+    </classes>
+</test>
+</suite>
