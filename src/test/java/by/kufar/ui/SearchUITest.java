@@ -12,6 +12,7 @@ public class SearchUITest extends BaseUITest {
     public void testValidSearch() {
         SearchPage searchPage = new SearchPage(driver);
         searchPage.searchFor("iPhone");
+        // во время поиска появляется рекалмное окно. и с ним нужно как-то сначала провзаимодействовать.
 
         assertTrue(searchPage.hasResults(), "No search results found");
         assertTrue(searchPage.getResultsCount() > 0, "Results count should be positive");
