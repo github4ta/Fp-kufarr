@@ -40,7 +40,6 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
-            <scope>test</scope>
         </dependency>
 
         <!-- REST Assured для API тестов -->
@@ -53,7 +52,6 @@
             <groupId>io.rest-assured</groupId>
             <artifactId>json-schema-validator</artifactId>
             <version>${rest-assured.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -71,7 +69,6 @@
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>2.1.0-alpha1</version>
-            <scope>test</scope>
         </dependency>
 
         <!-- Генерация тестовых данных -->
@@ -99,8 +96,6 @@
             <artifactId>commons-io</artifactId>
             <version>2.16.1</version>
         </dependency>
-
-
     </dependencies>
 
 </project>
