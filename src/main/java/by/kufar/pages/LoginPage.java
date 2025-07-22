@@ -48,8 +48,22 @@ public class LoginPage {
 
     public void login(String email, String password) {
         openLoginModal();
+        setEmail(email);
+        setPassword(password);
+        clickSubmit();
+    }
+
+    public void setEmail(String email) {
+        openLoginModal();
         wait.until(ExpectedConditions.visibilityOf(emailField)).sendKeys(email);
+    }
+
+    public void setPassword(String password) {
+        openLoginModal();
         wait.until(ExpectedConditions.visibilityOf(passwordField)).sendKeys(password);
+    }
+
+    public void clickSubmit() {
         wait.until(ExpectedConditions.elementToBeClickable(submitButton)).click();
     }
 
